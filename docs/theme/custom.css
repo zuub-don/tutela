@@ -1,0 +1,11 @@
+/* Tutela mdBook accents */
+:root {
+  --tutela-accent: #5b21b6;
+}
+.menu-title {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+blockquote {
+  border-inline-start: 3px solid var(--tutela-accent);
+}

@@ -4,6 +4,7 @@ An [Effect](https://effect.website)-native TypeScript SDK for the **Guardian Con
 
 [![CI](https://img.shields.io/github/actions/workflow/status/zuub-don/tutela/ci.yml?branch=main&label=CI&logo=github)](https://github.com/zuub-don/tutela/actions/workflows/ci.yml)
 [![Mutation score](https://img.shields.io/badge/mutation-93.6%25-brightgreen?logo=stryker)](./MUTATION.md)
+[![Docs](https://img.shields.io/badge/docs-mdBook-5b21b6)](https://zuub-don.github.io/tutela/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Effect](https://img.shields.io/badge/Effect-3.21-5B21B6)](https://effect.website)
 [![Module: ESM](https://img.shields.io/badge/module-ESM-F7DF1E)](https://nodejs.org/api/esm.html)
@@ -15,6 +16,8 @@ An [Effect](https://effect.website)-native TypeScript SDK for the **Guardian Con
 > *Tutela* — Latin for guardianship and protection. The name nods both to the
 > domain (life & group insurance) and to the SDK's aim: to guard the boundary
 > between your code and a remote API with types you can trust.
+
+📖 **Documentation:** <https://zuub-don.github.io/tutela/> (mdBook — built from `docs/`)
 
 ```ts
 import { Effect } from "effect"

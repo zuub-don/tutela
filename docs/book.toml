@@ -1,0 +1,20 @@
+[book]
+title = "Tutela"
+description = "An Effect-native TypeScript SDK for the Guardian Connect insurance APIs (unofficial)"
+authors = ["zuub-don"]
+language = "en"
+src = "src"
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/zuub-don/tutela"
+edit-url-template = "https://github.com/zuub-don/tutela/edit/main/docs/{path}"
+additional-css = ["theme/custom.css"]
+
+[output.html.fold]
+enable = true
+level = 1
+
+[output.html.playground]
+runnable = false
