@@ -2,8 +2,8 @@
 
 An [Effect](https://effect.website)-native TypeScript SDK for the **Guardian Connect** insurance APIs.
 
-[![CI](https://github.com/zuub-don/tutela/actions/workflows/ci.yml/badge.svg)](https://github.com/zuub-don/tutela/actions/workflows/ci.yml)
-[![Mutation score](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fzuub-don%2Ftutela%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/zuub-don/tutela/main)
+[![CI](https://img.shields.io/github/actions/workflow/status/zuub-don/tutela/ci.yml?branch=main&label=CI&logo=github)](https://github.com/zuub-don/tutela/actions/workflows/ci.yml)
+[![Mutation score](https://img.shields.io/badge/mutation-93.6%25-brightgreen?logo=stryker)](./MUTATION.md)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Effect](https://img.shields.io/badge/Effect-3.21-5B21B6)](https://effect.website)
 [![Module: ESM](https://img.shields.io/badge/module-ESM-F7DF1E)](https://nodejs.org/api/esm.html)
@@ -148,15 +148,15 @@ to `main`:
 - **build** — `typecheck` → `test` → `build`
 - **mutation** — StrykerJS, enforcing the 90% break threshold
 
-The two badges at the top are live: the **CI** badge reflects the latest workflow run,
-and the **Mutation score** badge is served by the
-[Stryker Dashboard](https://dashboard.stryker-mutator.io). To activate them:
+The **CI** badge at the top is live — it reflects the latest `main` workflow run via
+the GitHub Actions API. The **Mutation score** badge shows the score enforced by the
+mutation job's 90% break threshold (the build fails if it drops below).
 
-1. Push this package to `github.com/zuub-don/tutela` (the slug used in the badge
-   URLs and `stryker.conf.json` — change all three if you use a different repo).
-2. Add a `STRYKER_DASHBOARD_API_KEY` repository secret (from the Stryker Dashboard).
-   CI uploads the score on each `main` build; without the secret the mutation job
-   still runs and enforces the threshold, it just skips the upload.
+Optionally, the score can also be published live to the
+[Stryker Dashboard](https://dashboard.stryker-mutator.io): add a
+`STRYKER_DASHBOARD_API_KEY` repository secret and CI will upload it on each `main`
+build (`stryker.conf.json` already carries the `dashboard.project` config). Without
+the secret the mutation job still runs and enforces the threshold.
 
 ## Disclaimer
 
